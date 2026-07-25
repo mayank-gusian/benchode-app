@@ -1,0 +1,28 @@
+name: Core Quality Control (CI)
+
+on:
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  verify-build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Codebase
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js Environment
+        uses: actions/checkout@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Install Project Dependencies
+        run: npm ci
+
+      - name: Execute ESLint Code Analysis
+        run: npm run lint
+
+      - name: Validate TypeScript Integrity
+        run: npx tsc --noEmit
