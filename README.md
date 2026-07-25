@@ -1,7 +1,7 @@
 # BENCHODE 💻📊
 
 ## Project Overview
-BENCHODE is an advanced Progressive Web App (PWA) designed to solve the problem of missing hardware benchmark data...
+Benchmark Engine for Not-yet-tested Computers with Heuristic Optimization &amp; Deals Extractor (BENCHODE). A Next.js PWA that predicts hardware benchmarks via machine learning and aggregates live e-commerce deals across India to deliver smart, persona-based laptop recommendations.
 
 ## 🛠️ The Core Engineering Architecture & Tech Stack
 
